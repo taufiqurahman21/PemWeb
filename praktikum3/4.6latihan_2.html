@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>kalkulator sederhana</title>
+        <link rel="stylesheet" href="4.6latihan_2.css"
+        type="text/css" />
+    </head>
+    <body>
+        <div>
+            <h2>kalkulator <br /> sederhana</h2>
+            <input type="number" placeholder="bil 1" id="bil1"/>
+            <br/>
+            <input type="number" placeholder="bil 2" id="bil2" />
+            <br/>
+            <button id="add">+</button>
+            <button id="sub">-</button>
+            <button id="mul">x</button>
+            <button id="div">/</button>
+            <button id="mod" >%</button>
+            <input type="number" readonly id="result"/>
+        </div>
+        <script type="text/javascript">
+            var n1 = document.getElementById("bil1");
+            var n2 = document.getElementById("bil2");
+            var res = document.getElementById("result");
+            
+            document.getElementById("add").addEventListener("click", function(){
+                res.value = parseInt(n1.value)+parseInt(n2.value);
+            });
+
+            document.getElementById("sub").addEventListener("click", function(){
+                res.value = parseInt(n1.value)-parseInt(n2.value);
+            });
+
+            document.getElementById("mul").addEventListener("click", function(){
+                res.value = parseInt(n1.value)*parseInt(n2.value);
+            });
+
+            document.getElementById("div").addEventListener("click", function(){
+                res.value = parseInt(n1.value)/parseInt(n2.value);
+            });
+
+            document.getElementById("mod").addEventListener("click", function(){
+                res.value = parseInt(n1.value)%parseInt(n2.value);
+            });
+
+        </script>
+    </body>
+</html>
