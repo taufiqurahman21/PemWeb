@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>SOAL 2</title>
+    <style>
+        .kotak{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            background-color: yellow;
+            float: left;
+        }
+        .gantiwarna1{
+            background-color: red;
+        }
+        .gantiwarna2{
+            background-color: green;
+        }
+        .gantiwarna3{
+            background-color: blue;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#kotak1').dblclick(function (){
+                $('#kotak1').addClass('gantiwarna1');
+            });
+            $('#kotak2').dblclick(function (){
+                $('#kotak2').addClass('gantiwarna2');
+            });
+            $('#kotak3').dblclick(function (){
+                $('#kotak3').addClass('gantiwarna3');
+            });
+            $('#kotak4').dblclick(function (){
+                $('#kotak4').addClass('gantiwarna2');
+            });
+        });
+    </script>
+</head>
+<body>
+    klik 2x pada setiap kotak untuk mengubah warnanya
+    <br><br>
+    <div id="kotak1" class="kotak"></div>
+    <div id="kotak2" class="kotak"></div>
+    <div id="kotak3" class="kotak"></div>
+    <div id="kotak4" class="kotak"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Soal 1</title>
+    <style> 
+        .warna{
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#sembunyi').click(function (){
+                $('#foto').hide('slow');
+            });
+            $('#tampil').click(function (){
+                $('#foto').show('slow');
+            });
+            $('#sembunyi1').click(function (){
+                $('#foto1').hide('slow');
+            });
+            $('#tampil1').click(function (){
+                $('#foto1').show('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="tampil" class="warna" type="button" value="Tampilkan">
+    <input id="sembunyi" class="warna" type="button" value="Sembunyikan">
+    <br><br>
+    <input id="tampil1" class="warna" type="button" value="Tampilkan">
+    <input id="sembunyi1" class="warna" type="button" value="Sembunyikan">
+    <br><br>
+    <img id="foto" src="messi.jpg">
+    <img id="foto1" src="ronaldo.jpg">
+</body>
+</html>

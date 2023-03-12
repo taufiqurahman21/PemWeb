@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>SOAL 3</title>
+    <style>
+        .warna{
+            background-color: red;
+            color : white;
+        }
+        .kotak{
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            background-color: yellow;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        // jika dokumen siap digunakan
+        $(document).ready(function (){
+            $('#tampill').click(function (){
+                $('#kotak1').fadeOut("slow", function(){
+                    $('#kotak1').hide();
+                });
+            });
+            $('#tampil2').click(function (){
+                $("#kotak1").fadeIn("slow");
+            });
+            $('#tampil3').click(function (){
+                setTimeout(function (){
+                    $('#kotak1').fadeTo("slow", 0.3);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="kotak1" class="kotak"></div>
+    <br><br>
+    <input id="tampill" class="warna" type="button" value="Fade Out">
+    <input id="tampil2" class="warna" type="button" value="Fade In">
+    <input id="tampil3" class="warna" type="button" value="Fade 0.3">
+</body>
+</html>

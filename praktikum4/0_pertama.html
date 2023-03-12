@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <title>Document</title>
+</head>
+<script type="text/JavaScript">
+    function stripe(id) {
+    var even = false;
+    var evenColor = arguments[1] ? arguments[1] : “#fff”;
+    var oddColor = arguments[2] ? arguments[2] : “#eee”;
+    var table = document.getElementById(id); if (! table)
+    {return; }
+    var tbodies = table.getElementByTagName(“tbody”);
+    for (var h = 0; h < tbodies.length; h++) {
+    var trs = tbodies[h].getElementsByTagName(“tr”);
+    for (var i = 0; I < trs.length; i++) {
+    if ( ! hasClass(trs[i]) && ! trs[i].style.backgroundColor){
+    var tds = trs[i].getElementByTagName(“td”); for (var j =
+    0; j < tds.length; j++) {
+    var mytd = tds [j];
+    if (! hasClass(mytd) && ! mytd.style.backgroundColor) {
+    mytd.style.backgroundColor = even ? evenColor ? evenColor : oddColor;
+    }}}}}}
+</script>
+
+<body>
+
+</body>
+
+</html>
